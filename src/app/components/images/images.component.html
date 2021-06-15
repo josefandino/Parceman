@@ -1,0 +1,11 @@
+<div class="gallery">
+  <div class="childGallery">
+    <div class="imgGallery" *ngFor="let i of images">
+      <!-- <p class="text-center">{{ i.number }}</p> -->
+      <a target="_blank" [href]="i.url">
+        <img [src]="i.img" alt="{{ title }}">
+      </a>
+      <!-- <p class="text-center">{{ i.name }}</p> -->
+    </div>
+  </div>
+</div>

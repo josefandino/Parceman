@@ -1,0 +1,16 @@
+
+<ion-content color="dark">
+  <!-- <h3 class="ion-text-center">Parceman Héroes con soluciones</h3> -->
+  <ion-slides pager="true" [options]="slideOpts" #mySlider class="slides" (ionSlidesDidLoad)="slidesDidLoad(mySlider)" loop="true">
+    <ion-slide *ngFor="let img of img">
+      <div class="boxImg">
+        <img [src]="img.i" alt="images {{ title }}" > 
+      </div>
+    </ion-slide>
+  </ion-slides>
+  <app-images></app-images>
+
+  <app-footer></app-footer>
+  <app-whatsapp></app-whatsapp>
+
+</ion-content>
